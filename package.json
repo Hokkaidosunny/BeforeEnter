@@ -1,0 +1,20 @@
+{
+  "name": "react-router-enter",
+  "version": "0.1.0",
+  "description": "an onEnter hoc for react-router 4",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hokkaidosunny/react-router-enter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hokkaidosunny/react-router-enter/issues"
+  },
+  "homepage": "https://github.com/Hokkaidosunny/react-router-enter#readme"
+}
