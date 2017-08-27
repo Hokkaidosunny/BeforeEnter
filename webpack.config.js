@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, './dist'),
     filename: 'onEnter.js',
-    library: 'umd'
+    libraryTarget: 'umd'
   },
   module: {
     rules: [{

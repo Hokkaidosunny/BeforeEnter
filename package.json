@@ -1,6 +1,6 @@
 {
   "name": "react-router-enter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "an onEnter hoc for react-router 4",
   "main": "dist/onEnter.js",
   "scripts": {
@@ -25,5 +25,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "react": "^15.6.1"
   }
 }
