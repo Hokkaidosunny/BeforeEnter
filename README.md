@@ -2,6 +2,8 @@
 an onEnter hoc for react-router 4
 
 ## Usage
+`npm i react-router-enter`
+
 ```javascript
 import onEnter from 'react-router-enter';
 
