@@ -98,7 +98,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function onEnter(beforeEnter, WaitingComponent) {
+var onEnter = function onEnter(beforeEnter, WaitingComponent) {
   return function (Target) {
     var OnEnter = function (_Component) {
       _inherits(OnEnter, _Component);
@@ -108,9 +108,7 @@ function onEnter(beforeEnter, WaitingComponent) {
 
         var _this = _possibleConstructorReturn(this, (OnEnter.__proto__ || Object.getPrototypeOf(OnEnter)).call(this, props));
 
-        _this.state = {
-          ifDone: false
-        };
+        _this.state = { ifDone: false };
         return _this;
       }
 
@@ -119,9 +117,15 @@ function onEnter(beforeEnter, WaitingComponent) {
         value: function componentWillMount() {
           var _this2 = this;
 
-          beforeEnter(this.props).then(function () {
-            _this2.setState({ ifDone: true });
-          });
+          var res = beforeEnter(this.props);
+
+          if (res.then) {
+            res.then(function () {
+              return _this2.setState({ ifDone: true });
+            });
+          } else {
+            this.setState({ ifDone: true });
+          }
         }
       }, {
         key: 'render',
@@ -140,7 +144,7 @@ function onEnter(beforeEnter, WaitingComponent) {
 
     return OnEnter;
   };
-}
+};
 
 exports.default = onEnter;
 
