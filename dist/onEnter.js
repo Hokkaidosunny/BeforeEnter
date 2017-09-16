@@ -119,7 +119,7 @@ var onEnter = function onEnter(beforeEnter, WaitingComponent) {
 
           var res = beforeEnter(this.props);
 
-          if (res.then) {
+          if (res && res.then) {
             res.then(function () {
               return _this2.setState({ ifDone: true });
             });

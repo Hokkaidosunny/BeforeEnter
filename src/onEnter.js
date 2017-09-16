@@ -16,7 +16,7 @@ const onEnter = (
     componentWillMount() {
       const res = beforeEnter(this.props);
 
-      if (res.then) {
+      if (res && res.then) {
         res.then(() => this.setState({ ifDone: true }));
       } else {
         this.setState({ ifDone: true });
