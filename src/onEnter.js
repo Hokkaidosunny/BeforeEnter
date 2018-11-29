@@ -1,40 +1,34 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 
-const onEnter = (
-  beforeEnter,
-  WaitingComponent
-) => Target => {
-
+const onEnter = (beforeEnter, WaitingComponent) => Target => {
   class OnEnter extends Component {
-    static displayName = 'OnEnter';
+    static displayName = 'OnEnter'
 
     constructor(props) {
-      super(props);
-      this.state = { ifDone: false };
+      super(props)
+      this.state = { ifDone: false }
     }
 
     componentWillMount() {
-      const res = beforeEnter(this.props);
+      const res = beforeEnter(this.props)
 
       if (res && res.then) {
-        res.then(() => this.setState({ ifDone: true }));
+        res.then(() => this.setState({ ifDone: true }))
       } else {
-        this.setState({ ifDone: true });
+        this.setState({ ifDone: true })
       }
     }
 
     render() {
-      const $wait = WaitingComponent
-        ? <WaitingComponent {...this.props} />
-        : null;
+      const $wait = WaitingComponent ? (
+        <WaitingComponent {...this.props} />
+      ) : null
 
-      return this.state.ifDone
-        ? <Target {...this.props} />
-        : $wait;
+      return this.state.ifDone ? <Target {...this.props} /> : $wait
     }
   }
 
-  return OnEnter;
+  return OnEnter
 }
 
-export default onEnter;
+export default onEnter
