@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "noUnusedParameters": true,
+    "noUnusedLocals": false,
+    "noImplicitAny": true,
+    "target": "es6",
+    "lib": ["dom", "es7"],
+    "jsx": "react",
+    "module": "commonjs",
+    "declaration": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/*"]
+}
