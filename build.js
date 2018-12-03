@@ -5,10 +5,7 @@ const { buildUMD, buildES, buildCommonjs } = buidMyPackage
 
 buildUMD({
   entry: path.join(__dirname, './src/onEnter.js'),
-  mode: 'development',
-  output: {
-    filename: 'onEnter.js'
-  }
+  filename: 'onEnter.js'
 })
 
 buildES({

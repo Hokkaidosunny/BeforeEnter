@@ -22,7 +22,8 @@
     "react": "^16.6.3"
   },
   "devDependencies": {
-    "build-my-package": "^0.0.2",
+    "build-my-package": "^0.0.5",
+    "react": "^16.6.3",
     "standard-version": "^4.4.0"
   }
 }
