@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Hokkaidosunny/react-router-enter#readme",
   "devDependencies": {
     "@types/react": "^16.7.11",
-    "build-my-package": "^0.0.6",
+    "build-my-package": "^0.0.8",
     "standard-version": "^4.4.0",
     "typescript": "^3.2.1"
   },

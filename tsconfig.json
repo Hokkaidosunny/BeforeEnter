@@ -11,7 +11,8 @@
     "jsx": "react",
     "module": "commonjs",
     "declaration": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "declarationDir": "./dist/"
   },
   "include": ["src/*"]
 }
