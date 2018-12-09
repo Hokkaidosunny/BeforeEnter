@@ -7,10 +7,8 @@ an onEnter hoc for react-router 4
 `npm i react-router-enter`
 
 ```javascript
-// UMD
-import onEnter from 'react-router-enter'
 // commonjs
-import onEnter from 'react-router-enter/lib/onEnter'
+import onEnter from 'react-router-enter'
 // es
 import onEnter from 'react-router-enter/es/onEnter'
 

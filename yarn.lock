@@ -1253,10 +1253,10 @@ buffer@^4.3.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
-build-my-package@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/build-my-package/-/build-my-package-0.0.8.tgz#1156865b9764b3e83c27ad835494401913eddb1d"
-  integrity sha512-+9y7doEChmVNvzzvBrcwUrkj6ueeLPl3VwIWpcrokASAz1YUKRZofmgadoOwAdduE1n4XAXGyxrHv2Hh4X4N9Q==
+build-my-package@^0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/build-my-package/-/build-my-package-0.0.11.tgz#b70b4abcf57ec5310838f26d278d7f61f122d1f6"
+  integrity sha512-d1CPF6VJhlILC51Wh68xPoaUw6kJTe/MYV554Jpt6wH7tyenYL71ixMKnlTPxAOue+ErT4aHCNNPtRb8KtEobw==
   dependencies:
     "@babel/core" "^7.1.6"
     "@babel/plugin-proposal-class-properties" "^7.1.0"
