@@ -1,6 +1,6 @@
 {
   "name": "react-router-enter",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "an onEnter hoc for react-router 4",
   "main": "lib/onEnter.js",
   "scripts": {
