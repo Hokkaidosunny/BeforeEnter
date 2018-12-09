@@ -1,8 +1,8 @@
 {
   "name": "react-router-enter",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "an onEnter hoc for react-router 4",
-  "main": "dist/onEnter.js",
+  "main": "lib/onEnter.js",
   "scripts": {
     "build": "rm -rf es lib dist && node ./build.js",
     "release": "npm run build && standard-version && npm publish --registry=https://registry.npmjs.org/"
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Hokkaidosunny/react-router-enter#readme",
   "devDependencies": {
     "@types/react": "^16.7.11",
-    "build-my-package": "^0.0.8",
+    "build-my-package": "^0.0.11",
     "standard-version": "^4.4.0",
     "typescript": "^3.2.1"
   },
